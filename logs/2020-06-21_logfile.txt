@@ -1,0 +1,27 @@
+2020-06-21 08:56:18.0865 INFO Here is info message from the controller.
+2020-06-21 08:56:18.1907 DEBUG Here is debug message from the controller.
+2020-06-21 08:56:18.2170 WARN Here is warn message from the controller.
+2020-06-21 08:56:18.2439 ERROR Here is error message from the controller.
+2020-06-21 08:57:36.3386 INFO Here is info message from the controller.
+2020-06-21 08:57:49.1891 DEBUG Here is debug message from the controller.
+2020-06-21 08:57:49.2121 WARN Here is warn message from the controller.
+2020-06-21 08:57:49.2297 ERROR Here is error message from the controller.
+2020-06-21 09:24:48.6000 INFO Returned all stocks from database.
+2020-06-21 09:24:56.9530 INFO Returned stock with id: 1
+2020-06-21 09:25:34.7557 INFO Returned all stocks from database.
+2020-06-21 09:26:50.8255 INFO Returned all stocks from database.
+2020-06-21 09:27:32.3829 INFO Returned all stocks from database.
+2020-06-21 09:28:06.1632 ERROR stock with id: 12, hasn't been found in db.
+2020-06-21 09:28:22.0008 INFO Returned all stocks from database.
+2020-06-21 09:32:32.7076 INFO Returned all stocks from database.
+2020-06-21 09:32:55.7681 INFO Returned all stocks from database.
+2020-06-21 09:56:28.1139 INFO Returned all stocks from database.
+2020-06-21 12:49:02.7029 INFO Returned all stocks from database.
+2020-06-21 13:27:33.9621 INFO Returned all stocks from database.
+2020-06-21 14:12:45.7655 INFO Returned all stocks from database.
+2020-06-21 14:25:40.9144 INFO Returned stock with id: 8
+2020-06-21 14:26:31.4771 INFO Returned all stocks from database.
+2020-06-21 14:27:25.3082 INFO Returned all stocks from database.
+2020-06-21 20:23:46.8907 INFO Returned all stocks from database.
+2020-06-21 20:23:52.4909 INFO Returned stock with id: 1
+2020-06-21 20:25:31.4468 INFO Returned stock with id: 1
