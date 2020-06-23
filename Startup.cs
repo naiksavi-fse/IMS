@@ -62,15 +62,19 @@ namespace Inventory
             //logger
          
             services.AddControllers();
-
+            //Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
 
-            services.AddDbContext<InventoryDBContext>(option => option.UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog = InventoryDB;"));
+            //database connection
 
+            //services.AddDbContext<InventoryDBContext>(option => option.UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog = InventoryDB;"));
+            var connectionString = Configuration["sqlconnection:connectionString"];
+            services.AddDbContext<InventoryDBContext>(option => option.UseSqlServer(connectionString));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             //Logger
             services.AddSingleton<ILoggerManager, LoggerManager>();
         }

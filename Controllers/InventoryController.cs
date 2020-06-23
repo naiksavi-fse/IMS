@@ -19,6 +19,7 @@ using System.Text;
 namespace Inventory.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class InventoryController : ControllerBase
     {
@@ -36,8 +37,7 @@ namespace Inventory.Controllers
 
         // GET: api/<InventoryController>
         [HttpGet]
-        [Authorize]
-            
+                 
         public IActionResult Get()
         {
             try 
