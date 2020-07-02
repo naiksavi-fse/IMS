@@ -1,6 +1,0 @@
-2020-06-22 12:31:36.3890 INFO Returned stock with id: 1
-2020-06-22 12:35:10.4671 INFO Returned all stocks from database.
-2020-06-22 12:37:52.7926 INFO Returned stock with id: 1
-2020-06-22 12:38:08.0321 INFO Returned all stocks from database.
-2020-06-22 12:39:27.0098 INFO Returned all stocks from database.
-2020-06-22 12:40:05.9275 INFO Returned all stocks from database.

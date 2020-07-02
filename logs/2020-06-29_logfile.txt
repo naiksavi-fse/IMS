@@ -1,0 +1,1 @@
+2020-06-29 09:18:12.4895 INFO Returned all stocks from database.

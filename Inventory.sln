@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Contracts", "..\I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Repository", "..\Inventory.Repository\Inventory.Repository.csproj", "{6BBC41E2-8A12-448F-9410-2F1F7FF1000B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "..\LoggerService\LoggerService.csproj", "{D6DD3625-3B55-4FB6-A5EB-E9127FD39C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "..\LoggerService\LoggerService.csproj", "{D6DD3625-3B55-4FB6-A5EB-E9127FD39C6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.NUnitTest", "..\Inventory.NUnitTest\Inventory.NUnitTest.csproj", "{7C763013-44EF-49A4-B6B5-D18E47BFAA31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.NUnitTest", "..\Inventory.NUnitTest\Inventory.NUnitTest.csproj", "{7C763013-44EF-49A4-B6B5-D18E47BFAA31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

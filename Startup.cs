@@ -21,7 +21,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using NLog;
-
+using StackExchange.Redis;
 
 namespace Inventory
 {
@@ -70,13 +70,17 @@ namespace Inventory
 
             //database connection
 
-            //services.AddDbContext<InventoryDBContext>(option => option.UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog = InventoryDB;"));
+          // services.AddDbContext<InventoryDBContext>(option => option.UseSqlServer(@"Data Source=(localdb)\ProjectsV13;Initial Catalog = InventoryDB;"));
             var connectionString = Configuration["sqlconnection:connectionString"];
             services.AddDbContext<InventoryDBContext>(option => option.UseSqlServer(connectionString));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //Logger
             services.AddSingleton<ILoggerManager, LoggerManager>();
+
+            //Redis cache
+            IConnectionMultiplexer redis = ConnectionMultiplexer.Connect("rediscachefse.redis.cache.windows.net:6380,password=dnnF4GDt3a9a8tXtaCzwXQmEbpoKWrq82goY6muS4QE=,ssl=True,abortConnect=False");
+            services.AddScoped(s => redis.GetDatabase());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -108,6 +112,8 @@ namespace Inventory
             app.UseAuthorization();
 
             inventoryDBContext.Database.Migrate();
+
+            //inventoryDBContext.Database.EnsureCreated();
 
             app.UseEndpoints(endpoints =>
             {
