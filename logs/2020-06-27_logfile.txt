@@ -1,0 +1,6 @@
+2020-06-27 08:48:53.9196 INFO Returned all stocks from database.
+2020-06-27 08:49:01.7257 INFO Returned stock with id: 4
+2020-06-27 08:53:00.0336 INFO Returned all stocks from database.
+2020-06-27 08:54:44.6136 INFO Returned all stocks from database.
+2020-06-27 08:56:58.5581 INFO Returned all stocks from database.
+2020-06-27 08:57:37.9510 INFO Returned all stocks from database.
